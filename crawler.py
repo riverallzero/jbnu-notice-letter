@@ -23,7 +23,9 @@ sender_pw = os.environ.get('MAIL_PASSWORD')
 
 receiver_email = 'kallzero1008@jbnu.ac.kr'
 
-file_path = 'last_no.txt'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, 'last_no.txt')
+
 if os.path.exists(file_path):
     with open(file_path, 'r') as file:
         last_no = int(file.read())
