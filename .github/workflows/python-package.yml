@@ -40,6 +40,11 @@ jobs:
       run: |
         git config --global user.name "riverallzero"
         git config --global user.email "riverallzero@naver.com"
+    - if: github.run_number == 1
+      run: |
+        git add last_no.txt
+        git commit -m "Update last_no.txt"
+        git push
     - name: Check for changes
       id: check_changes
       run: |
