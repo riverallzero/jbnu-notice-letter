@@ -26,11 +26,10 @@ receiver_email = 'kallzero1008@jbnu.ac.kr'
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(BASE_DIR, 'last_no.txt')
 
-try:
-    if os.path.exists(file_path):
-        with open(file_path, 'r') as file:
-            last_no = int(file.read())
-except:
+if os.path.exists(file_path):
+    with open(file_path, 'r') as file:
+        last_no = int(file.read())
+else:
     last_no = None
 
 url = 'https://www.jbnu.ac.kr/kor/?menuID=139'
