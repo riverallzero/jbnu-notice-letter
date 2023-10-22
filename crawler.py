@@ -11,17 +11,17 @@ import os
 keyword = '안내'
 
 # ================================================
-# SENDER =========================================
+# EMAIL ==========================================
 # ================================================
 
-sender_email = 'kallzero1008@jbnu.ac.kr'
+sender_email = os.environ.get('MAIL_SENDER')
 sender_pw = os.environ.get('MAIL_PASSWORD')
 
-# ================================================
-# RECEIVER =======================================
-# ================================================
+receiver_email = os.environ.get('MAIL_RECEIVER')
 
-receiver_email = 'kallzero1008@jbnu.ac.kr'
+# ================================================
+# CODE ===========================================
+# ================================================
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(BASE_DIR, 'last_no.txt')
