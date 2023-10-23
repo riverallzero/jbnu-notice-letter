@@ -29,10 +29,14 @@
   - MAIL_SENDER: 메일 발신자
   - MAIL_PASSWORD: 발신자의 메일 비밀번호
   - MAIL_RECEIVER: 메일 수신자
+
+  <details>
+     <summary>도움말</summary>
      
   ![](https://github.com/riverallzero/riverallzero/assets/93754504/afb1d803-9dca-47c9-8a72-e1c1b5ff78ca)
   ![](https://github.com/riverallzero/riverallzero/assets/93754504/313f798d-f87a-41f8-85d7-25c6d4c6695d)
-
+  </details>
+  
 ### Keyword 
 - [crawler.py](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/crawler.py): line 11에 원하는 키워드 입력하기
 
@@ -46,6 +50,16 @@
 
 ### Reset last_no.txt
 - [last_no.txt](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/last_no.txt): 최신 공지 번호 0으로 설정하기
+
+### Cron(option)
+- 코드 실행 주기 커스터마이징 하기
+- UTC TimeZone으로 한국과 -9시간 차이
+- [python-package.yml](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/.github/workflows/python-package.yml): line 11에 원하는 시간 설정하기
+
+  ```yaml
+    schedule:
+    - cron:  "0 1,3,5,7,9 * * *" # UTC TZ(korea time - 9)
+  ```
 
 ## Result
 ![](https://github.com/riverallzero/riverallzero/assets/93754504/b0d4ca71-22a0-4d3a-9575-d52cd2d8050f)
