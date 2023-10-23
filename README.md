@@ -14,11 +14,11 @@
    
    ![](https://github.com/riverallzero/riverallzero/assets/93754504/9df5d2a1-6923-413b-9a2c-f91748af9164)
    
-3. "메일", "window컴퓨터"를 선택 앱 비밀번호를 설정합니다.
+3. '메일', 'window컴퓨터'를 선택하고 앱 비밀번호를 설정합니다.
    
    ![](https://github.com/riverallzero/riverallzero/assets/93754504/1f242ae5-5eb3-4907-af13-850b0574a41b)
 
-4. 생성된 비밀번호를 복사합니다
+4. 생성된 비밀번호를 복사합니다.
    
   ![](https://github.com/riverallzero/riverallzero/assets/93754504/1518e42a-202b-4e35-9b6c-649baa355b73)
 </details>
