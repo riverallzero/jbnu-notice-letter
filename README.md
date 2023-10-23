@@ -1,6 +1,5 @@
 # JBNU-NoticeLetter
-
-<img src='https://github.com/riverallzero/riverallzero/assets/93754504/b0d4ca71-22a0-4d3a-9575-d52cd2d8050f' width='700'>
+![](.asset/result.png)
 
 ## Setting
 ⚠️ 본 저장소를 클론하고 개별 설정한 이후 사용할 수 있습니다.
@@ -13,15 +12,15 @@
 1. 구글 계정관리에 들어가 왼쪽에 보안 메뉴를 클릭합니다.   
 2. 2단계 인증 부분을 완료해줍니다.
    
-   ![](https://github.com/riverallzero/riverallzero/assets/93754504/9df5d2a1-6923-413b-9a2c-f91748af9164)
+   ![](.asset/google-1.png)
    
 3. '메일', 'window컴퓨터'를 선택하고 앱 비밀번호를 설정합니다.
    
-   ![](https://github.com/riverallzero/riverallzero/assets/93754504/1f242ae5-5eb3-4907-af13-850b0574a41b)
+   ![](.asset/google-2.png)
 
 4. 생성된 비밀번호를 복사합니다.
    
-  ![](https://github.com/riverallzero/riverallzero/assets/93754504/1518e42a-202b-4e35-9b6c-649baa355b73)
+  ![](.asset/google-3.png)
 </details>
 
 ### EMail Information
@@ -34,8 +33,8 @@
   <details>
      <summary> 설정화면</summary>
      
-  ![](https://github.com/riverallzero/riverallzero/assets/93754504/afb1d803-9dca-47c9-8a72-e1c1b5ff78ca)
-  ![](https://github.com/riverallzero/riverallzero/assets/93754504/313f798d-f87a-41f8-85d7-25c6d4c6695d)
+  ![](.asset/secret-1.png)
+  ![](.asset/secret-2.png)
   </details>
   
 ### Keyword 
