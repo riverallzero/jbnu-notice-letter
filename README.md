@@ -5,8 +5,10 @@
 ⚠️ 본 저장소 클론하고 개별 설정한 이후 사용할 수 있습니다.
 
 ### GMail
-- 메일 발신자에 한해 보안설정에 관해 2차 인증이 필요합니다.
-  
+
+<details>
+<summary>메일 발신자에 한해 보안설정 2차 인증이 필요합니다.</summary>
+
 1. 구글 계정관리에 들어가 왼쪽에 보안 메뉴를 클릭합니다.   
 2. 2단계 인증 부분을 완료해줍니다.
    
@@ -19,6 +21,7 @@
 4. 생성된 비밀번호를 복사합니다
    
   ![](https://github.com/riverallzero/riverallzero/assets/93754504/1518e42a-202b-4e35-9b6c-649baa355b73)
+</details>
 
 ### EMail Information
 - ⚙︎ Settings - (Security) Secrets and variables - Actions - New repository secret
