@@ -1,5 +1,6 @@
 # JBNU-NoticeLetter
-| MONITORING | 오전 10시부터 오후 6시까지, 2시간 간격으로 받아보는 원하는 키워드에 관한 공지사항 뉴스레터
+
+<img src='https://github.com/riverallzero/riverallzero/assets/93754504/b0d4ca71-22a0-4d3a-9575-d52cd2d8050f' width='700'>
 
 ## Setting
 ⚠️ 본 저장소를 클론하고 개별 설정한 이후 사용할 수 있습니다.
@@ -60,6 +61,3 @@
     schedule:
     - cron:  "0 1,3,5,7,9 * * *" # UTC TZ(korea time - 9)
   ```
-
-## Result
-![](https://github.com/riverallzero/riverallzero/assets/93754504/b0d4ca71-22a0-4d3a-9575-d52cd2d8050f)
