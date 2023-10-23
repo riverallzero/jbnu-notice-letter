@@ -2,12 +2,12 @@
 | MONITORING | 오전 10시부터 오후 6시까지, 2시간 간격으로 받아보는 원하는 키워드에 관한 공지사항 뉴스레터
 
 ## Setting
-⚠️ 본 저장소 클론하고 개별 설정한 이후 사용할 수 있습니다.
+⚠️ 본 저장소를 클론하고 개별 설정한 이후 사용할 수 있습니다.
 
 ### GMail
 
 <details>
-<summary>메일 발신자에 한해 보안설정 2차 인증이 필요합니다.</summary>
+<summary> 메일 발신자에 한해 보안설정 2차 인증이 필요합니다.</summary>
 
 1. 구글 계정관리에 들어가 왼쪽에 보안 메뉴를 클릭합니다.   
 2. 2단계 인증 부분을 완료해줍니다.
@@ -31,7 +31,7 @@
   - MAIL_RECEIVER: 메일 수신자
 
   <details>
-     <summary>도움말</summary>
+     <summary> 설정화면</summary>
      
   ![](https://github.com/riverallzero/riverallzero/assets/93754504/afb1d803-9dca-47c9-8a72-e1c1b5ff78ca)
   ![](https://github.com/riverallzero/riverallzero/assets/93754504/313f798d-f87a-41f8-85d7-25c6d4c6695d)
