@@ -13,16 +13,16 @@
 
 1. 구글 계정관리에 들어가 왼쪽에 보안 메뉴를 클릭합니다.   
 2. 2단계 인증 부분을 완료해줍니다.
-   
-   ![](.asset/google-1.png)
+
+   <img src='.asset/google-1.png' width=500/>
    
 3. '메일', 'window컴퓨터'를 선택하고 앱 비밀번호를 설정합니다.
    
-   ![](.asset/google-2.png)
+   <img src='.asset/google-2.png' width=500/>
 
 4. 생성된 비밀번호를 복사합니다.
    
-  ![](.asset/google-3.png)
+   <img src='.asset/google-3.png' width=500/>
 </details>
 
 ### 2. EMail Information
