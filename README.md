@@ -31,6 +31,9 @@
   - MAIL_ADDRESS: 메일 주소
   - MAIL_PASSWORD: 메일 비밀번호
   
+  ![](.asset/secret-1.png)
+  ![](.asset/secret-2.png)
+
 ### 3. Keyword 
 - [crawler.py](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/crawler.py): line 11에 원하는 키워드 입력하기 (예. ['벨트'], ['벨트', '연수', '특강'] 등)
 
