@@ -4,7 +4,7 @@
 ## Setting
 ⚠️ 본 저장소를 클론하고 개별 설정한 이후 사용할 수 있습니다.
 
-### GMail
+### 1. GMail
 
 <details>
 <summary> 메일 발신자에 한해 보안설정 2차 인증이 필요합니다.</summary>
@@ -23,7 +23,7 @@
   ![](.asset/google-3.png)
 </details>
 
-### EMail Information
+### 2. EMail Information
 - ⚙︎ Settings - (Security) Secrets and variables - Actions - New repository secret
 - Name이 'MAIL_SENDER', 'MAIL_PASSWORD', 'MAIL_RECEIVER'인 변수에 알맞은 값을 넣어 만들기
   - MAIL_SENDER: 메일 발신자
@@ -37,8 +37,8 @@
   ![](.asset/secret-2.png)
   </details>
   
-### Keyword 
-- [crawler.py](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/crawler.py): line 11에 원하는 키워드 입력하기
+### 3. Keyword 
+- [crawler.py](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/crawler.py): line 11에 원하는 키워드 입력하기 (예. ['벨트'], ['벨트', '연수', '특강'] 등)
 
   ```python
   # ================================================
@@ -47,6 +47,8 @@
   
   keywords = ['안내', '벨트']
   ```
+### 4. Reset
+[last_no.txt](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/last_no.txt) 파일 삭제하기
 
 ### Cron(option)
 - 코드 실행 주기 커스터마이징 하기
