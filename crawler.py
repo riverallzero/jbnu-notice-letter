@@ -4,22 +4,17 @@ import smtplib
 from email.mime.text import MIMEText
 import os
 
-# ================================================
 # KEYWORD ========================================
 # ================================================
 
-keywords = ['안내', '벨트']
+keywords = ['안내', '공고']
 
-# ================================================
 # EMAIL ==========================================
 # ================================================
 
-sender_email = os.environ.get('MAIL_SENDER')
-sender_pw = os.environ.get('MAIL_PASSWORD')
+email_address = os.environ.get('MAIL_ADDRESS')
+email_password = os.environ.get('MAIL_PASSWORD')
 
-receiver_email = os.environ.get('MAIL_RECEIVER')
-
-# ================================================
 # CODE ===========================================
 # ================================================
 
@@ -38,11 +33,11 @@ html_content = response.read()
 
 soup = BeautifulSoup(html_content, 'html.parser')
 
-new_notices = []
 last_nums = []
 for idx, keyword in enumerate(keywords):
-    last_no = int(list(last_no_list)[idx])
+    new_notices = []
 
+    last_no = int(list(last_no_list)[idx])
     for a_tag in soup.find_all(
             'a',
             href=lambda href: href and href.startswith('?menuID=139'),
@@ -70,15 +65,17 @@ for idx, keyword in enumerate(keywords):
 
         msg = MIMEText(f'키워드 "{keyword}"에 대한 새로운 공지사항이 업데이트되었습니다. 아래에서 상세 내용을 확인해주세요. \n \n{contents}', 'html')
         msg['Subject'] = f'[{keyword}] 전북대학교 공지사항 새알림'
-        msg['From'] = sender_email
-        msg['To'] = receiver_email
+        msg['From'] = email_address
+        msg['To'] = email_address
 
         smtp = smtplib.SMTP('smtp.gmail.com', 587)
         smtp.starttls()
-        smtp.login(sender_email, sender_pw)
-        smtp.sendmail(sender_email, receiver_email, msg.as_string())
+        smtp.login(email_address, email_password)
+        smtp.sendmail(email_address, email_address, msg.as_string())
 
         smtp.quit()
+
+    new_notices.clear()
 
 with open(file_path, 'w') as file:
     file.write(str(','.join(last_nums)))

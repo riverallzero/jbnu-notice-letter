@@ -25,28 +25,20 @@
 
 ### 2. EMail Information
 - ⚙︎ Settings - (Security) Secrets and variables - Actions - New repository secret
-- Name이 'MAIL_SENDER', 'MAIL_PASSWORD', 'MAIL_RECEIVER'인 변수에 알맞은 값을 넣어 만들기
-  - MAIL_SENDER: 메일 발신자
-  - MAIL_PASSWORD: 발신자의 메일 비밀번호
-  - MAIL_RECEIVER: 메일 수신자
-
-  <details>
-     <summary> 설정화면</summary>
-     
-  ![](.asset/secret-1.png)
-  ![](.asset/secret-2.png)
-  </details>
+- Name이 'MAIL_ADDRESS', 'MAIL_PASSWORD'인 변수(주소, 비밀번호)에 알맞은 값을 넣어 만들기
+  - MAIL_ADDRESS: 메일 주소
+  - MAIL_PASSWORD: 메일 비밀번호
   
 ### 3. Keyword 
 - [crawler.py](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/crawler.py): line 11에 원하는 키워드 입력하기 (예. ['벨트'], ['벨트', '연수', '특강'] 등)
 
   ```python
-  # ================================================
   # KEYWORD ========================================
   # ================================================
   
-  keywords = ['안내', '벨트']
+  keywords = ['안내', '공고']
   ```
+  
 ### 4. Reset
 [last_no.txt](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/last_no.txt) 파일 삭제하기
 

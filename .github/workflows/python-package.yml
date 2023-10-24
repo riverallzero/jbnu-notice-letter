@@ -31,9 +31,8 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics 
     - name: Set Secrets 
       env: 
-        MAIL_SENDER: ${{ secrets.MAIL_SENDER }}
+        MAIL_ADDRESS: ${{ secrets.MAIL_ADDRESS }}
         MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
-        MAIL_RECEIVER: ${{ secrets.MAIL_RECEIVER }}
       run: python crawler.py
     - name: Set Git Config
       run: |
