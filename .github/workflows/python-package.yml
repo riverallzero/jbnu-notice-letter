@@ -39,9 +39,8 @@ jobs:
       run: |
         git config --global user.name "riverallzero"
         git config --global user.email "riverallzero@naver.com"
-    - name: Test
+    - if: github.run_number == 1
       run: |
-        python crawler.py test
         git add last_no.txt
         git commit -m "Create last_no.txt"
         git push

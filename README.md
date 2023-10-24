@@ -45,11 +45,8 @@
   # KEYWORD ========================================
   # ================================================
   
-  keyword = '안내'
+  keywords = ['안내', '벨트']
   ```
-
-### Reset last_no.txt
-- [last_no.txt](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/last_no.txt): 최신 공지 번호 0으로 설정하기
 
 ### Cron(option)
 - 코드 실행 주기 커스터마이징 하기
