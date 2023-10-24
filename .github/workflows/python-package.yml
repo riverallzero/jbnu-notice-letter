@@ -35,13 +35,16 @@ jobs:
         MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
         MAIL_RECEIVER: ${{ secrets.MAIL_RECEIVER }}
       run: python crawler.py
-    - name: Test
-      run: |
-        python crawler.py test
     - name: Set Git Config
       run: |
         git config --global user.name "riverallzero"
         git config --global user.email "riverallzero@naver.com"
+    - name: Test
+      run: |
+        python crawler.py test
+        git add last_no.txt
+        git commit -m "Create last_no.txt"
+        git push
     - name: Check for changes
       id: check_changes
       run: |
