@@ -43,7 +43,10 @@
   
   ![](.asset/secret.png)
 
-### 3. Keyword 
+### 3. Reset
+[last_no.txt](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/last_no.txt) 파일 삭제하기
+
+### 4. Keyword 
 - [crawler.py](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/crawler.py): line 11에 원하는 키워드 입력하기 (예. ['벨트'], ['벨트', '연수', '특강'] 등)
 
   ```python
@@ -52,9 +55,6 @@
   
   keywords = ['안내', '공고']
   ```
-  
-### 4. Reset
-[last_no.txt](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/last_no.txt) 파일 삭제하기
 
 ### Cron(option)
 - 코드 실행 주기 커스터마이징 하기
