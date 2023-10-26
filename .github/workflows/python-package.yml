@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron:  "0 1,3,5,7,9 * * *" # UTC TZ(korea time - 9)
+    - cron:  "0 1-9/2 * * *" # UTC TZ(korea time - 9)
 jobs:
   build:
     runs-on: ubuntu-latest

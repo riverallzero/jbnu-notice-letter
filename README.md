@@ -57,11 +57,11 @@
   ```
 
 ### Cron(option)
-- 코드 실행 주기 커스터마이징 하기
+- 코드 실행 주기 커스터마이징 하기(현재 오전 10시부터 오후 6시까지 2시간 간격)
 - UTC TimeZone으로 한국과 -9시간 차이
 - [python-package.yml](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/.github/workflows/python-package.yml): line 11에 원하는 시간 설정하기
 
   ```yaml
     schedule:
-    - cron:  "0 1,3,5,7,9 * * *" # UTC TZ(korea time - 9)
+    - cron:  "0 1-9/2 * * *" # UTC TZ(korea time - 9)
   ```
