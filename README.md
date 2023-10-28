@@ -55,6 +55,10 @@
   
   keywords = ['해외', '해커톤']
   ```
+### 5. Action
+- Actions - Python package
+- Key기
+   <img src='.asset/action_build.png' width=500/>
 
 ### Cron(option)
 - 코드 실행 주기 커스터마이징 하기(현재 오전 10시부터 오후 6시까지 2시간 간격)
