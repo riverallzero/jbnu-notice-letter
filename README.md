@@ -63,5 +63,5 @@
 
   ```yaml
     schedule:
-    - cron:  "0 1-9/2 * * *" # UTC TZ(korea time - 9)
+    - cron:  "0 1-9/2 * * 1-5" # UTC TZ(korea time - 9)
   ```
