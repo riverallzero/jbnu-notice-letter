@@ -41,7 +41,7 @@
   - MAIL_ADDRESS: 메일 주소
   - MAIL_PASSWORD: 메일 비밀번호
   
-  ![](.asset/secret.png)
+![](.asset/secret.png)
 
 ### 3. Reset
 [last_no.txt](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/last_no.txt) 파일 삭제하기
@@ -56,7 +56,12 @@
   keywords = ['해외', '해커톤']
   ```
 
-### Cron(option)
+### 5. Action
+- workflow 활성화하기(클론한 저장소 Actions탭에서 활성화 버튼 클릭)
+
+<img src='.asset/action.png' width=500/>
+
+### Option. Cron
 - 코드 실행 주기 커스터마이징 하기(현재 오전 10시부터 오후 6시까지 2시간 간격)
 - UTC TimeZone으로 한국과 -9시간 차이
 - [python-package.yml](https://github.com/riverallzero/JBNU-NoticeLetter/blob/main/.github/workflows/python-package.yml): line 11에 원하는 시간 설정하기
