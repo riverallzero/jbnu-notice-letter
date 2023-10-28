@@ -61,7 +61,7 @@
 - reset, Keyword 수정 이후에도 Python package에 event 확인하기
   
 - 수행되지 않는다면 밑의 옵션에 코드 실행 시간 확인, 수정하기
-   <img src='.asset/action_build.png' width=800/>
+   <img src='.asset/action_event.png' width=800/>
 
 ### Cron(option)
 - 코드 실행 주기 커스터마이징 하기(현재 오전 10시부터 오후 6시까지 2시간 간격)
