@@ -1,4 +1,4 @@
-# JBNU-NoticeLetter1
+# JBNU-NoticeLetter
 ![](.asset/result.png)
 
 ## Setting
