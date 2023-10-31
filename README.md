@@ -57,9 +57,11 @@
   ```
 
 ### 5. Action
-- workflow 활성화하기(클론한 저장소 Actions탭에서 활성화 버튼 클릭)
+- workflow 활성화하기(클론한 저장소 Actions탭에서 활성화 버튼 클릭-PythonPackage에서 Enable Workflow 버튼 클릭)
 
 <img src='.asset/action.png' width=500/>
+
+<img src='.asset/action-enabled.png'/>
 
 ### Option. Cron
 - 코드 실행 주기 커스터마이징 하기(현재 오전 10시부터 오후 6시까지 2시간 간격)
