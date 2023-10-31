@@ -40,7 +40,7 @@ jobs:
         git config --global user.email "riverallzero@naver.com"
     - name: Check if 'last_no.txt' exists
       run: |
-        if [ ! -f last_no.txt ]; then
+        if [[ $(git ls-files | grep 'last_no.txt') ]]; then
           echo "last_no.txt does not exist. Adding and committing..."
           git add last_no.txt
           git commit -m "Create last_no.txt"
