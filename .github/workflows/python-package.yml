@@ -38,16 +38,11 @@ jobs:
       run: |
         git config --global user.name "riverallzero"
         git config --global user.email "riverallzero@naver.com"
-    - name: Check if 'last_no.txt' exists
+    - if: github.run_number == 1
       run: |
-        if ! git ls-files --error-unmatch last_no.txt >/dev/null 2>&1; then
-          echo "last_no.txt does not exist. Adding and committing..."
-          git add last_no.txt
-          git commit -m "Create last_no.txt"
-          git push
-        else
-          echo "last_no.txt already exists."
-        fi
+        git add last_no.txt
+        git commit -m "Create last_no.txt"
+        git push
     - name: Check for changes
       id: check_changes
       run: |
