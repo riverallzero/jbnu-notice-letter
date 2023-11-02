@@ -7,7 +7,7 @@ import os
 # KEYWORD ========================================
 # ================================================
 
-keywords = ['해외', '해커톤']
+keywords = ['해외', '해커톤', '연수']
 
 # EMAIL ==========================================
 # ================================================
@@ -23,7 +23,12 @@ file_path = os.path.join(BASE_DIR, 'last_no.txt')
 
 if os.path.exists(file_path):
     with open(file_path, 'r') as file:
-        last_no_list = file.read().split(',')
+        last_no_file = file.read().split(',')
+        
+        if len(keywords) == len(last_no_file):
+            last_no_list = last_no_file
+        else:
+            last_no_list = [0 for i in range(len(keywords))]
 else:
     last_no_list = [0 for i in range(len(keywords))]
 
