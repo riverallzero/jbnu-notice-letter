@@ -46,7 +46,7 @@ for idx, keyword in enumerate(keywords):
     for a_tag in soup.find_all(
             'a',
             href=lambda href: href and href.startswith('?menuID=139'),
-            title=lambda title: title and keyword in title,
+            title=lambda title: title and keyword.lower() in title.lower(),
     ):
         if a_tag.find('span'):
             # 고유 번호
