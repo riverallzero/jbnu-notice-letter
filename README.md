@@ -1,7 +1,7 @@
 # JBNU-NoticeLetter
-[전북대학교 공지사항](https://www.jbnu.ac.kr/kor/?menuID=139)에서 원하는 키워드가 포함된 공지사항이 올라올 때 gmail로 관련 정보를 받아볼 수 있습니다. 
-본 저장소를 **clone**하고 몇 가지의 설정을 마친 이후 사용할 수 있습니다. 
-서비스를 이용하기 위해서 아래 **setting** 부분을 순서대로 따라주세요.
+- [전북대학교 공지사항](https://www.jbnu.ac.kr/kor/?menuID=139)에서 원하는 키워드가 포함된 공지사항이 올라올 때 gmail로 관련 정보를 받아볼 수 있습니다. 
+- 저장소를 **clone**하고 몇 가지의 설정을 마친 이후 사용할 수 있습니다. 
+- 서비스를 이용하기 위해서 아래 **setting** 부분을 순서대로 따라주세요.
 
 ![](.asset/result.png)
 
@@ -15,7 +15,7 @@
 ### 2. Account Information
 - ⚙︎ Settings - (Security) Secrets and variables - Actions - New repository secret
 - Name이 'MAIL_ADDRESS', 'MAIL_PASSWORD'인 변수 생성
-  - MAIL_ADDRESS(변수 이름): 메일 주소 입력(변수 값)
+  - MAIL_ADDRESS(변수 이름): 메일 주소(변수 값)
   - MAIL_PASSWORD(변수 이름): 메일 비밀번호(변수 값)
   
 ![](.asset/secret.png)
