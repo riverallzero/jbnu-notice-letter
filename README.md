@@ -11,13 +11,17 @@
 
 <img src='.asset/google.png' width=500/>
 
-### 2. Github Secrets
+### 2. Repository
 - Settings > (Security) Secrets and variables > Actions > ```New repository secret```
 - Name이 'MAIL_ADDRESS', 'MAIL_PASSWORD'인 변수 생성
   - MAIL_ADDRESS(변수 이름): 메일 주소(변수 값)
   - MAIL_PASSWORD(변수 이름): 메일 비밀번호(변수 값)
   
 ![](.asset/secret.png)
+
+- Settings > (Code and automation) Actions > General > Workflow permissions > ```Read and write permissions```
+
+![](.asset/permission.png)
 
 
 ### 3. Custom Keywords
