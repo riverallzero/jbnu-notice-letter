@@ -32,7 +32,7 @@ if os.path.exists(file_path):
 else:
     last_no_list = [0 for i in range(len(keywords))]
 
-url = 'https://www.jbnu.ac.kr/kor/?menuID=139'
+url = 'https://www.jbnu.ac.kr/web/news/notice/sub01.do?menu=2377'
 response = urllib.request.urlopen(url)
 html_content = response.read()
 
@@ -43,21 +43,19 @@ for idx, keyword in enumerate(keywords):
     new_notices = []
 
     last_no = int(list(last_no_list)[idx])
-    for a_tag in soup.find_all(
-            'a',
-            href=lambda href: href and href.startswith('?menuID=139'),
-            title=lambda title: title and keyword.lower() in title.lower(),
-    ):
-        if a_tag.find('span'):
-            # 고유 번호
-            no_index = int(a_tag['href'].split('=')[-1])
-            # 공지 제목
-            notice_title = a_tag['title'][:-5]
-            # 공지 세부내용 url
-            detail_url = f'https://www.jbnu.ac.kr/kor/?menuID=139&mode=view&no={no_index}'
 
-            if last_no is None or no_index > last_no:
-                new_notices.append((no_index, notice_title, detail_url))
+    filtered_a_tags = [tag for tag in soup.find_all('a', class_='title') if keyword.lower() in tag.get_text().lower()]
+
+    for a_tag in filtered_a_tags:
+        # 고유 번호
+        no_index = int(a_tag.get('onclick', '').split('(')[-1].split(')')[0].strip("'"))
+        # 공지 제목
+        notice_title = a_tag.get_text(strip=True)
+        # 공지 세부내용 url
+        detail_url = f'https://www.jbnu.ac.kr/web/Board/{no_index}/detailView.do?pageIndex=1&menu=2377'
+
+        if last_no is None or no_index > last_no:
+            new_notices.append((no_index, notice_title, detail_url))
 
     last_no = max(new_notices, key=lambda x: x[0])[0] if new_notices else last_no
     last_nums.append(str(last_no))
